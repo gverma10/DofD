@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿<!--
+    This is a web browser based game, named as "Dungeon of Dragons"
+    Created By: Gurinder Verma 
+    Student ID: 300811333
+    Last modified on 30th January 2015
+    Description: This is a choice selection based game, in which the user has to
+    select one of the two provided option and get to win.
+
+-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -12,6 +21,7 @@
 <body onload="main()">
 
     <div id="impress">
+        <!--The first slide gives a brief about the plot of the game-->
         <div id="1" class="step slide" style="background-image: url('images/slide_bg/warrior.jpg');">
             <div class="slide-text">
                 <p>You are the Prince of Skyros, the ancient city of Greece.</p>
@@ -22,6 +32,7 @@
             </div>
         </div>
 
+        <!--The second slide will let the player choose weapon of his choice-->
         <div id="2" class="step slide" data-y="1500" style="background-image: url('images/slide_bg/sword of angels.jpg');">
             <div class="slide-text">
                 <p>You screem full of fury...</p>
@@ -37,6 +48,7 @@
             </div>
         </div>
 
+        <!--The third slide will apear if the user choose the staff and will further give two options-->
         <div id="3" class="step slide" data-x="-1500" data-y="1500" style="background-image: url('images/slide_bg/two way cave.jpg');">
             <div class="slide-text">
                 <p>Now you have the Staff of Unicorns which one its kind in the whole universe</p>
@@ -49,6 +61,7 @@
             </div>
         </div>
 
+        <!--The fourth slide will apear if the user choose the sword and will further give two options-->
         <div id="4" class="step slide" data-x="1500" data-y="1500" style="background-image: url('images/slide_bg/two way cave.jpg');">
             <div class="slide-text">
                 <p>Now you have the Sword of Angels which one its kind in the whole universe</p>
@@ -61,6 +74,7 @@
             </div>
         </div>
 
+        <!--If the user choose the left path in slide 3 then he will be given the wings and excel to the final stage-->
         <div id="5" class="step slide" data-x="-1500" data-y="0" style="background-image: url('images/slide_bg/dragon.jpg');">
             <div class="slide-text">
                 <p>You have been blessed by the angels and now have wings, You can fly now!!!</p>
@@ -72,6 +86,7 @@
             </div>
         </div>
 
+        <!--If the user choose the right path in slide 3 then he will be given the dagger and excel to the final stage-->
         <div id="6" class="step slide" data-x="-1500" data-y="3000" style="background-image: url('images/slide_bg/dragon.jpg');">
             <div class="slide-text">
                 <p>Now you have the Devil's dagger, but beware this might overwhelm you with infinite power</p>
@@ -83,6 +98,7 @@
             </div>
         </div>
 
+        <!--After the selection from slide 4 the user would be given the shield and excel to the final stage-->
         <div id="7" class="step slide" data-x="1500" data-y="0" style="background-image: url('images/slide_bg/onocenteurs.jpg');">
             <div class="slide-text">
                 <p>You have choosen path to the shield and you got it!!!</p>
@@ -94,6 +110,7 @@
             </div>
         </div>
 
+        <!--After the selection from slide 4 the user would be given the compass and excel to the final stage-->
         <div id="8" class="step slide" data-x="1500" data-y="3000" style="background-image: url('images/slide_bg/minotaur_cave.jpg');">
             <div class="slide-text">
                 <p>You have choosen path to the compass and you got it!!!</p>
@@ -107,6 +124,7 @@
             </div>
         </div>
 
+        <!--On the final stage after the slide 5 if user selects to shield with wings and loses-->
         <div id="9" class="step slide" data-x="-3000" data-y="-750" style="background-image: url('images/slide_bg/burning wings.jpg');">
             <div class="slide-text">
                 <p>You have shielded yourself with the wings,</p>
@@ -115,6 +133,7 @@
             </div>
         </div>
 
+        <!--On the final stage after the slide 5 if user selects to attack dragon with staff and loses princess-->
         <div id="10" class="step slide" data-x="-3000" data-y="750" style="background-image: url('images/slide_bg/dead drgaon.jpg'); ">
             <div class="slide-text">
                 <p>You attacked the dragon with staff.</p>
@@ -124,6 +143,7 @@
             </div>
         </div>
 
+        <!--On the final stage after the slide 6 if user selects to attack with dagger and loses-->
         <div id="11" class="step slide" data-x="-2250" data-y="4500" style="background-image: url('images/slide_bg/angry dragon.jpg');">
             <div class="slide-text">
                 <p>You attacked the dragon with the dagger.</p>
@@ -133,6 +153,7 @@
             </div>
         </div>
 
+        <!--On the final stage after the slide 6 if user selects to attack with the staff, evil forces takeover and loses-->
         <div id="12" class="step slide" data-x="-750" data-y="4500" style="background-image: url('images/slide_bg/evil power.jpg');">
             <div class="slide-text">
                 <p>You attacked the dragon with staff.</p>
@@ -142,6 +163,7 @@
             </div>
         </div>
 
+        <!--On the final stage after the slide 7 if user selects to attack and loses-->
         <div id="13" class="step slide" data-x="3000" data-y="-750" style="background-image: url('images/slide_bg/warrior attack.jpg');">
             <div class="slide-text">
                 <p>You attacked the troop of onocenteurs with your sword and killed many.</p>
@@ -150,6 +172,7 @@
             </div>
         </div>
 
+        <!--On the final stage after the slide 7 if user selects to shield and loses-->
         <div id="14" class="step slide" data-x="3000" data-y="750" style="background-image: url('images/slide_bg/warrior shield.jpg');">
             <div class="slide-text">
                 <p>You defend yourself with the shield from the continious attacks of the onocenteur.</p>
@@ -158,6 +181,7 @@
             </div>
         </div>
 
+        <!--On the final stage after the slide 8 if user selects to attack and loses-->
         <div id="15" class="step slide" data-x="750" data-y="4500" style="background-image: url('images/slide_bg/minotaur.jpg');">
             <div class="slide-text">
                 <p>You attcaked the minotaur with the sword, he counter attcaked you and threw you against the pavement.</p>
@@ -166,6 +190,7 @@
             </div>
         </div>
 
+        <!--On the final stage after the slide 8 if user selects to dodge and kills the minataur and saves the princess-->
         <div id="16" class="step slide" data-x="2250" data-y="4500" style="background-image: url('images/slide_bg/prince of persia.jpg');">
             <div class="slide-text">
                 <p>You dodged the attack of the Minotaur and he hit the end of the cave and stuck his horns there.</p>
