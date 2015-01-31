@@ -67,6 +67,22 @@
   <ItemGroup>
     <Content Include="css\game.css" />
     <Content Include="css\reset.css" />
+    <Content Include="images\slide_bg\angry dragon.jpg" />
+    <Content Include="images\slide_bg\burning wings.jpg" />
+    <Content Include="images\slide_bg\dead drgaon.jpg" />
+    <Content Include="images\slide_bg\dragon.jpg" />
+    <Content Include="images\slide_bg\evil power.jpg" />
+    <Content Include="images\slide_bg\kingdom.jpg" />
+    <Content Include="images\slide_bg\minotaur.jpg" />
+    <Content Include="images\slide_bg\minotaur_cave.jpg" />
+    <Content Include="images\slide_bg\onocenteurs.jpg" />
+    <Content Include="images\slide_bg\player.png" />
+    <Content Include="images\slide_bg\prince of persia.jpg" />
+    <Content Include="images\slide_bg\sword of angels.jpg" />
+    <Content Include="images\slide_bg\two way cave.jpg" />
+    <Content Include="images\slide_bg\warrior attack.jpg" />
+    <Content Include="images\slide_bg\warrior shield.jpg" />
+    <Content Include="images\slide_bg\warrior.jpg" />
     <Content Include="index.html" />
     <Content Include="Scripts\lib\game.js" />
     <Content Include="Scripts\lib\impress.js" />
